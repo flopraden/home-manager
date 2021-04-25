@@ -16,7 +16,7 @@ rec {
 
   modeStr = name: keybindings: ''
     mode "${name}" {
-    ${keybindingsStr { inherit keybindings; }}
+    ${keybindingsStr keybindings}
     }
   '';
 }
