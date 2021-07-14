@@ -340,17 +340,6 @@ let
         "client.urgent ${colorSetStr colors.urgent}"
         "client.placeholder ${colorSetStr colors.placeholder}"
         "client.background ${colors.background}"
-        ## (keybindingsStr {
-        ##   keybindings = keybindingDefaultWorkspace;
-        ##   bindsymArgs =
-        ##     lib.optionalString (cfg.config.bindkeysToCode) "--to-code";
-        ## })
-        ## (keybindingsStr {
-        ##   keybindings = keybindingsRest;
-        ##   bindsymArgs =
-        ##     lib.optionalString (cfg.config.bindkeysToCode) "--to-code";
-        ## })
-        ## (keycodebindingsStr keycodebindings)
 	(keybindingsStr keybindings)
       ] ++ mapAttrsToList inputStr input
         ++ mapAttrsToList outputStr output # outputs
