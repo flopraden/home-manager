@@ -51,7 +51,7 @@ let
               Consider to use <code>lib.mkOptionDefault</code> function to extend or override
               default keybindings instead of specifying all of them from scratch.
           '';
-          example = literalExample ''
+          example = literalExpression ''
             let
               modifier = config.wayland.windowManager.sway.config.modifier;
             in lib.mkOptionDefault {
