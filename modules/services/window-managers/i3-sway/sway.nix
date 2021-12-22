@@ -344,7 +344,7 @@ let
       ] ++ mapAttrsToList inputStr input
         ++ mapAttrsToList outputStr output # outputs
         ++ mapAttrsToList seatStr seat # seats
-        ++ mapAttrsToList (modeStr cfg.config.bindkeysToCode) modes # modes
+        ++ mapAttrsToList modeStr modes # modes
         ++ mapAttrsToList assignStr assigns # assigns
         ++ map barStr bars # bars
         ++ optional (gaps != null) gapsStr # gaps
